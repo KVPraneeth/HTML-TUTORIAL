@@ -20,5 +20,31 @@
       He said, &ldquo;Hello, how are you?&rdquo; and I replied, &ldquo;I'm doing
       well, thank you!&rdquo;
     </p>
+
+    <!--- HTML APIs 
+    1. Geolocation API
+    2. Storage API
+    ---->
+
+    <!--- Frames --->
+    <label for="myframe1">Frame 1:</label>
+    <iframe height="300" width="500" name="myframe1"> </iframe>
+    <label for="myframe2">Frame 2:</label>
+    <iframe height="300" width="500" name="myframe2"> </iframe>
+
+    <a href="assets/images/images.png" target="myframe1">Google Logo</a>
+    <a href="https://wikipedia.org" target="myframe2">Wikipedia</a>
+
+    <!-- Web storage
+     1. Local Storage -- data persistance -- long term solution across all sessions
+     storage linit - 5-10 MB per domain
+     Usage - caching data for offline use, storing user preferences, and maintaining user sessions.
+
+     2. Session Storage -- 
+        data persistence -- short term solution for a single session
+        temporary storage that is cleared when the page session ends (when the browser tab is closed).
+        Usage - storing temporary data that should not persist across sessions, such as form data or temporary
+        storage linit - 5-10 MB per domain
+     -->
   </body>
 </html>
