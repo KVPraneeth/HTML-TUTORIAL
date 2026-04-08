@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+
+    <style>
+      body {
+        font-size: 30px;
+        color: red;
+      }
+      .class-1 a {
+        color: inherit;
+      }
+      .class-2 a {
+        color: initial;
+      }
+      .class-3 a {
+        color: unset;
+      }
+      .display-important-use {
+        color: blue !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Inheritance</h1>
+    <ul>
+      <li>Default <a href="">Link</a>Color</li>
+      <li class="class-1">Inherited<a href=""> Link</a> Color</li>
+      <li class="class-2">Initial <a href="">Link</a> Color</li>
+      <li class="class-3">Unset <a href="">Link</a> Color</li>
+    </ul>
+
+    <!--Showing the use of Important-->
+    <p class="display-important-use" style="color: green">
+      Here there is an inline style which sets color to green
+    </p>
+  </body>
+</html>

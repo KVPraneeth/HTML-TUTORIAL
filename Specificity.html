@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+
+    <style>
+      #grocerries {
+        font-size: 20px;
+      }
+      ul#grocerries li.classname1 {
+        color: red;
+        font-weight: bold;
+      }
+      ul#grocerries li.classname2 {
+        color: blue;
+      }
+      ul#grocerries li {
+        color: green;
+      }
+
+      .same-spec-case {
+        color: red;
+      }
+      .same-spec-case {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Specificity</h1>
+    <ul id="grocerries">
+      <li class="classname2">Fruit</li>
+      <li class="classname1">Vegetables</li>
+      <li>Dairy</li>
+
+      <p>
+        We can observe that the first 2 colors are overridden by the last one
+        because of the specificity of the selectors
+      </p>
+    </ul>
+    <h1 class="same-spec-case">Same specificity case</h1>
+  </body>
+</html>
