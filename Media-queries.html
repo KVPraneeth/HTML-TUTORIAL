@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries 2</title>
+
+    <style>
+      @media screen and (max-width: 600px) and (orientation: landscape) {
+        body {
+          background-color: lightblue;
+        }
+      }
+      @media (orientation: portrait) {
+        body {
+          background-color: lightgreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Responsive Design with Media Queries -->
+    <h1>Using Media Queries 2</h1>
+    <!-- Syntax for Images -->
+    <img
+      src="web-development-concept-set_1284-6769.avif"
+      alt="Web Development Image"
+    />
+    <img
+      src="assets/images/web-development-concept-set_1284-6769.avif"
+      alt="Web Development Image"
+      height="400"
+      width="400"
+    />
+    <!-- Syntax for Lists -->
+    <!-- Unordered List -->
+    <h3>Unordered List</h3>
+    <ul type="square">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <!-- Ordered List -->
+    <h3>Ordered List</h3>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <!-- Forms-->
+    <h1>Forms</h1>
+    <form action="" method="">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+      />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Buttons-->
+    <h1>Buttons</h1>
+    <button>Click Me</button>
+
+    <!--checkboxes-->
+    <h1>Checkboxes</h1>
+    <label for="checkbox1">I agree to the terms and conditions</label>
+    <input type="checkbox" id="checkbox1" name="checkbox1" value="Yes" />
+
+    <!-- Radio Buttons-->
+    <h1>Radio Buttons</h1>
+    <input type="radio" id="radio1" value="value1" name="radio1" />
+    <label for="radio1">Option 1</label>
+    <input type="radio" id="radio2" value="value2" name="radio1" />
+    <label for="radio2">Option 2</label>
+    <input type="radio" id="radio3" value="value3" name="radio1" />
+    <label for="radio3">Option 3</label>
+    <br /><br />
+
+    <input type="radio" id="radio4" value="Option A" name="radio2" />
+    <label for="radio4">Option A</label>
+    <input type="radio" id="radio5" value="Option B" name="radio2" />
+    <label for="radio5">Option B</label>
+
+    <!--Selectors - Drop Downs-->
+    <h1>Selectors - Drop Downs</h1>
+    <label for="gender"> Select Gender</label>
+    <select name="gender" id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </body>
+</html>
